@@ -42,3 +42,38 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'cancan'
+gem 'figaro'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'rolify'
+gem 'simple_form'
+gem 'slim-rails'
+gem 'therubyracer', :platform=>:ruby
+
+group :development do
+  gem 'haml2slim'
+  gem 'html2haml'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+end
+
+group :production do
+  gem 'thin'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'cucumber-rails', :require=>false
+  gem 'database_cleaner', '1.0.1'
+  gem 'email_spec'
+  gem 'launchy'
+end
+
